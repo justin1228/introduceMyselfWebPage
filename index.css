@@ -36,7 +36,7 @@ body{
 }   
 .target{
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
     text-shadow: 1px 1px 2px gray;
     color: white;
     margin-bottom: 5px;
@@ -80,4 +80,9 @@ ol{
     height: 100%;
     z-index: -1;
     animation: fadeIn 0.5s linear;
+}
+.js-toDoList{
+    color: white;
+    text-shadow: 1px 1px 2px gray;
+
 }
