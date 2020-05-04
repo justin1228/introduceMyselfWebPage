@@ -33,6 +33,7 @@ function paintingToDo(text){
     toDoInput.value = "";
     li.appendChild(delBtn);
     li.appendChild(span);
+    li.style.color = "white";
     
     toDoList.appendChild(li);
     li.id = newId;
