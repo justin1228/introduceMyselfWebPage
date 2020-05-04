@@ -3,10 +3,11 @@ const IMG_NUMBER = 3;
 
 
 
-function handleImgLoad(){
+function handleImgLoad() {
     console.log("finish loading");
 }
-function paintImage(imgNumber){
+
+function paintImage(imgNumber) {
     const image = new Image();
     image.src = `images/${imgNumber+1}.jpg`;
     image.classList.add("bgImage");
@@ -15,12 +16,12 @@ function paintImage(imgNumber){
 }
 
 
-function gen_num(){
-    const num = Math.floor(Math.random()*IMG_NUMBER);
+function gen_num() {
+    const num = Math.floor(Math.random() * IMG_NUMBER);
     return num;
 }
 
-function init(){
+function init() {
     const randNum = gen_num();
     paintImage(randNum);
 }

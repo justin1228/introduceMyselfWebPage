@@ -1,17 +1,19 @@
-body{
-    
+body {
+
     background-size: cover;
-    
+
     font-family: Arial;
     z-index: 1;
 }
-.header{
+
+.header {
     color: white;
     height: 100px;
     display: inline-block;
-    
+
 }
-.homeButton{
+
+.homeButton {
     width: 50px;
     height: 30px;
     text-align: center;
@@ -19,29 +21,34 @@ body{
     left: 20px;
     top: 20px;
 }
-.paragraph{
+
+.paragraph {
     margin-top: 50px;
     text-align: center;
 }
-.homeImage{
+
+.homeImage {
     width: 40px;
     height: 45px;
 }
-.js-weather{
+
+.js-weather {
     width: 60px;
     height: 30px;
     position: fixed;
     right: 20px;
     top: 20px;
-}   
-.target{
+}
+
+.target {
     text-align: center;
     font-size: 50px;
     text-shadow: 1px 1px 2px gray;
     color: white;
     margin-bottom: 5px;
 }
-.js-clock{
+
+.js-clock {
     width: 100%;
     height: 130px;
     color: white;
@@ -50,29 +57,36 @@ body{
     padding-bottom: 10px;
     margin-top: 5px;
 }
-.js-toDo{
+
+.js-toDo {
     text-align: center;
 }
-.hide{
+
+.hide {
     display: none;
 }
-.show{
+
+.show {
     display: block;
 }
-ol{
+
+ol {
     width: 500px;
-    margin-left:40%;
+    margin-left: 40%;
     text-align: left;
 }
 
-@keyframes fadeIn{
-    from{
-        opacity: 0 ;
-    }to {
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
         opacity: 1;
     }
 }
-.bgImage{
+
+.bgImage {
     position: absolute;
     top: 0;
     left: 0;
@@ -81,12 +95,14 @@ ol{
     z-index: -1;
     animation: fadeIn 0.5s linear;
 }
-.js-toDo{
+
+.js-toDo {
     color: white;
     text-shadow: 1px 1px 2px gray;
 
 }
-li{
+
+li {
     color: white;
     text-shadow: 1px 1px 2px gray;
 

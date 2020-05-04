@@ -1,27 +1,27 @@
 const name = document.querySelector(".target"),
     nameInput = document.querySelector(".js-name");
-    realInput = nameInput.querySelector("input");
+realInput = nameInput.querySelector("input");
 const NAME_LS = "USERNAME";
 
-function handleSubmit(event){
+function handleSubmit(event) {
     event.preventDefault();
     const pushName = realInput.value;
     console.log(pushName);
     showName(pushName);
-    localStorage.setItem(NAME_LS,pushName);
+    localStorage.setItem(NAME_LS, pushName);
 
 
-} 
+}
 
-function askName(){
-    
+function askName() {
+
     nameInput.classList.remove("hide");
     nameInput.classList.add("show");
     nameInput.addEventListener("submit", handleSubmit);
-    
+
 }
 
-function showName(text){
+function showName(text) {
     nameInput.classList.remove("show");
     nameInput.classList.add("hide");
     name.classList.add("show");
@@ -30,19 +30,18 @@ function showName(text){
 
 
 
-function loadName(){
+function loadName() {
     const currentValue = localStorage.getItem(NAME_LS);
 
-    if(currentValue===null){
+    if (currentValue === null) {
         askName();
-    }
-    else{
+    } else {
         showName(currentValue);
     }
 }
 
-function init(){
+function init() {
     loadName();
-    
+
 }
 init();
